@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>acm task</title>
+	<script>
+		//console.log(localStorage);
+		function store(){
+			var event = document.getElementById('event').value;
+			var budget = document.getElementById('budget').value;
+			var venue = document.getElementById('venue').value;
+
+			
+
+			window.localStorage.setItem('event', event);
+			window.localStorage.setItem('budget', budget);
+			window.localStorage.setItem('venue', venue);
+
+			console.log(event);
+			console.log(budget);
+			console.log(venue);
+			
+		}
+	</script>
+</head>
+<body> 
+	<form action="list.html">
+	<input type="text" name="event" id="event" placeholder="Event Name"/>
+	<input type="text" name="budget" id="budget" placeholder="Event budget"/>
+	<input type="text" name="venue" id="venue" placeholder="Event Venue"/>
+	<input type="submit" name="submit" onclick="store();" />
+	</form>
+</body>
+</html>

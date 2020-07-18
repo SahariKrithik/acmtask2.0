@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>acm event</title>
+	
+</head>
+<body>
+	Event Name is <span id="output"></span>.
+</br>
+	Event buget is <span id="price"></span>.
+</br>	
+	Event Venue is <span id="loc"></span>.
+</br>	
+
+<script>
+		document.getElementById('output').innerHTML = localStorage.getItem('event');
+		document.getElementById('price').innerHTML = localStorage.getItem('budget');
+		document.getElementById('loc').innerHTML = localStorage.getItem('venue');
+	</script>
+</body>
+
+</html>
